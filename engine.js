@@ -1,3 +1,6 @@
+function encrypt(){
+    var text = document.querySelector("inputText").value;
+}
 /*
                      _        _                 _      _                      _ _    
                     | |      | |               (_)    | |                    (_| |   
