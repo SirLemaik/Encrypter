@@ -1,3 +1,25 @@
+.logos{
+    display: flex;
+    justify-content: center;
+}
+
+img.linkedIn{
+    width: 25px;
+    height: 25px;
+    margin: 0 0.3em 0 0.3em;
+}
+
+img.instagram{
+    width: 25px;
+    height: 25px;
+    margin: 0 0.3em 0 0.3em;
+}
+
+img.github{
+    width: 25px;
+    height: 25px;
+    margin: 0 0.3em 0 0.3em;
+}
 /*
                      _        _                 _      _                      _ _    
                     | |      | |               (_)    | |                    (_| |   

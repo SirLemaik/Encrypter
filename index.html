@@ -8,33 +8,35 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
   </head>
+  
   <body>
-    <h1 class="titulo">Encriptador</h1>
+    <h1 class="tittle">Encriptador</h1>
     <main class="main">
       <section class="form box">
         <form action="">
-          <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aqui (Minúsculas, sin caracteres especiales">
-          <input class="btn" type="button" value="encriptar!" id="btn-encriptar">
-          <input class="btn" type="button" value="desencriptar!" id="btn-desencriptar">
+          <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aquí (Minúsculas, sin caracteres especiales">
+          <input class="btn" type="button" value="Encriptar" id="btn-encriptar">
+          <input class="btn" type="button" value="Desencriptar" id="btn-desencriptar">
         </form>
       </section>
     
       <section class="msg box">
         <h2 id="">Su mensaje es:</h2>
         <input class="text-input-salida" type="text" id="msg">
-        <button onclick="copyToClipBoard()">Copy</button>
+        <button onclick="copyToClipBoard()">Copiar</button>
       </section>
     </main>
   
     <script src="engine.js"></script>
     <script src="copy.js"></script>
+  
   </body>
     
     <footer>
       <div class="logos">
-        <a title="linkedIn" href="https://www.linkedin.com/in/kiamel-coello-672727226/" target="_blank"><img src="logoLinkedin.png"></a>
-        <a title="instagram" href="https://www.instagram.com/kiamelcoello/" target="_blank"><img src="logoInstagram.png"></a>
-        <a title="github" href="https://github.com/SirLemaik" target="_blank"><img src="logoGithub.png"></a>
+        <a title="linkedIn" href="https://www.linkedin.com/in/kiamel-coello-672727226/" target="_blank"><img class="linkedIn" src="logoLinkedin.png"></a>
+        <a title="instagram" href="https://www.instagram.com/kiamelcoello/" target="_blank"><img class="instagram" src="logoInstagram.png"></a>
+        <a title="github" href="https://github.com/SirLemaik" target="_blank"><img class="github" src="logoGithub.png"></a>
       </div>
     </footer>
   </body>
