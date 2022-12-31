@@ -7,28 +7,29 @@
     <title>Encriptador</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <script>    
-      var text="Hola pedrito como estas hace tiempo no se de ti";
-      console.log(text);
-
-      var encryptedText = text.toString()
-        .replace(/e/g, "enter")
-        .replace(/i/g, "imes")
-        .replace(/a/g, "ai")
-        .replace(/o/g, "ober")
-        .replace(/u/g, "ufat")
-      console.log(encryptedText);  
-      
-      var decryptedText = encryptedText.toString()
-        .replace(/enter/g, "e")
-        .replace(/imes/g, "i")
-        .replace(/ai/g, "a")
-        .replace(/ober/g, "o")
-        .replace(/ufat/g, "u")
-      console.log(decryptedText);</script>
   </head>
-
   <body>
+    <h1 class="titulo">Encriptador</h1>
+    <main class="main">
+      <section class="form box">
+        <form action="">
+          <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aqui (Minúsculas, sin caracteres especiales">
+          <input class="btn" type="button" value="encriptar!" id="btn-encriptar">
+          <input class="btn" type="button" value="desencriptar!" id="btn-desencriptar">
+        </form>
+      </section>
+    
+      <section class="msg box">
+        <h2 id="">Su mensaje es:</h2>
+        <input class="text-input-salida" type="text" id="msg">
+        <button onclick="copyToClipBoard()">Copy</button>
+      </section>
+    </main>
+  
+    <script src="engine.js"></script>
+    <script src="copy.js"></script>
+  </body>
+    
     <footer>
     
     </footer>
