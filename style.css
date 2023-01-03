@@ -1,6 +1,25 @@
+body{
+    background: #e5e5e5;
+    font-family:'Kanit', sans-serif;
+}
+
 .tittle{
     display: flex;
     justify-content: center;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.text-input, .text-input-salida{
+    font-family: 'Karla', sans-serif;
+    height: 4em;
+    width: 46%
+}
+
+.btn, .copy-btn{
+    height: 2em;
+    width: 6.5em;
+    font-family:'Kanit', sans-serif;
 }
 
 .logos{
@@ -8,23 +27,12 @@
     justify-content: center;
 }
 
-img.linkedIn{
-    width: 25px;
-    height: 25px;
-    margin: 0 0.3em 0 0.3em;
+img.linkedIn, img.instagram, img.github {
+    width: 1.8em;
+    height: 1.8m;
+    margin: 0 0 0 1em;
 }
 
-img.instagram{
-    width: 25px;
-    height: 25px;
-    margin: 0 0.3em 0 0.3em;
-}
-
-img.github{
-    width: 25px;
-    height: 25px;
-    margin: 0 0.3em 0 0.3em;
-}
 /*
                      _        _                 _      _                      _ _    
                     | |      | |               (_)    | |                    (_| |   

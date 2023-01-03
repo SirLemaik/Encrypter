@@ -4,17 +4,31 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encriptador</title>
+    <title>Cryptify</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap'); </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kanit&family=Karla:wght@200&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Kanit&family=Karla:wght@200&display=swap'); </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+      }
+      </style>
   </head>
   
   <body>
-    <h1 class="tittle">Encriptador</h1>
+    <h1 class="tittle">Cryptify</h1>
     <main class="main">
       <section class="form box">
         <form action="">
-          <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aquí (Minúsculas, sin caracteres especiales)">
+          <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aquí (Solo minúsculas, sin caracteres especiales (*^$%#))">
           <input class="btn" type="button" value="Encriptar" id="btn-encriptar">
           <input class="btn" type="button" value="Desencriptar" id="btn-desencriptar">
         </form>
@@ -23,7 +37,7 @@
       <section class="msg box">
         <h2 id="">Su mensaje es:</h2>
         <input class="text-input-salida" type="text" id="msg" placeholder="Ningún mensaje fue encontrado">
-        <button onclick="copyToClipBoard()">Copiar</button>
+        <button class="copy-btn" onclick="copyToClipBoard()">Copiar</button>
       </section>
     </main>
   
@@ -32,9 +46,9 @@
 
     <footer>
       <div class="logos">
-        <a title="linkedIn" href="https://www.linkedin.com/in/kiamel-coello-672727226/" target="_blank"><img class="linkedIn" src="logoLinkedin.png"></a>
-        <a title="instagram" href="https://www.instagram.com/kiamelcoello/" target="_blank"><img class="instagram" src="logoInstagram.png"></a>
-        <a title="github" href="https://github.com/SirLemaik" target="_blank"><img class="github" src="logoGithub.png"></a>
+        <a title="LinkedIn" href="https://www.linkedin.com/in/kiamel-coello-672727226/" target="_blank"><img class="linkedIn" src="logoLinkedin.png"></a>
+        <a title="Instagram" href="https://www.instagram.com/kiamelcoello/" target="_blank"><img class="instagram" src="logoInstagram.png"></a>
+        <a title="GitHub" href="https://github.com/SirLemaik" target="_blank"><img class="github" src="logoGithub.png"></a>
       </div>
     </footer>
   </body>
