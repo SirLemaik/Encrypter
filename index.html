@@ -26,19 +26,24 @@
   <body>
     <h1 class="tittle">Cryptify</h1>
     <main class="main">
-      <section class="form box">
-        <form action="">
-          <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aquí (Solo minúsculas, sin caracteres especiales (*^$%#))">
-          <input class="btn" type="button" value="Encriptar" id="btn-encriptar">
-          <input class="btn" type="button" value="Desencriptar" id="btn-desencriptar">
-        </form>
-      </section>
-    
-      <section class="msg box">
-        <h2 id="">Su mensaje es:</h2>
-        <input class="text-input-salida" type="text" id="msg" placeholder="Ningún mensaje fue encontrado">
-        <button class="copy-btn" onclick="copyToClipBoard()">Copiar</button>
-      </section>
+      <div class="mssgBox">
+        <div class="mssgBox1">
+          <section class="form box">
+            <form action="">
+              <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aquí (Solo minúsculas, sin caracteres especiales (*^$%#))">
+              <input class="btn" type="button" value="Encriptar" id="btn-encriptar">
+              <input class="btn" type="button" value="Desencriptar" id="btn-desencriptar">
+            </form>
+          </section>
+        </div>
+        <div class="mssBox2">
+          <section class="msg box">
+            <h2 id="">Su mensaje es:</h2>
+            <input class="text-input-salida" type="text" id="msg" placeholder="Ningún mensaje fue encontrado">
+            <button class="copy-btn" onclick="copyToClipBoard()">Copiar</button>
+          </section>
+        </div>
+      </div>
     </main>
   
     <script src="engine.js"></script>

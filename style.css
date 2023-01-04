@@ -11,6 +11,21 @@ body{
     padding: 0.2em;
 }
 
+.mssgBox{
+    display: flex;
+    justify-content: center;
+}
+
+.mssgBox1{
+    display: flex;
+    justify-content: left;
+}
+
+.mssgBox2{
+    display: flex;
+    justify-content:right;
+}
+
 .text-input, .text-input-salida{
     font-family: 'Karla', sans-serif;
     height: 1.6em;
@@ -21,6 +36,8 @@ body{
     height: 2em;
     width: 6.5em;
     font-family:'Kanit', sans-serif;
+    display: flex;
+    justify-content:right;
 }
 
 img.linkedIn, img.instagram, img.github {
