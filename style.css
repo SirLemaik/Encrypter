@@ -8,6 +8,7 @@ body{
     justify-content: center;
     font-weight: bold;
     font-size: 2em;
+    padding: 0.2em;
 }
 
 .text-input, .text-input-salida{
