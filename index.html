@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="es">
   <head>
     <meta charset="UTF-8">
@@ -7,58 +6,29 @@
     <title>Cryptify</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
-    <style> @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap'); </style>
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kanit&family=Karla:wght@200&display=swap" rel="stylesheet">
-    <style> @import url('https://fonts.googleapis.com/css2?family=Kanit&family=Karla:wght@200&display=swap'); </style>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <style>
-      .material-symbols-outlined {
-        font-variation-settings:
-        'FILL' 0,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 48
-      }
-      </style>
   </head>
-  
   <body>
     <h1 class="tittle">Cryptify</h1>
-    <main class="main">
-      <div class="mssgBox">
-        <div class="mssgBox1">
-          <section class="form box">
-            <form action="">
-              <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aquí (Solo minúsculas, sin caracteres especiales (*^$%#))">
-              <input class="btn" type="button" value="Encriptar" id="btn-encriptar">
-              <input class="btn" type="button" value="Desencriptar" id="btn-desencriptar">
-            </form>
-          </section>
-        </div>
-        <div class="mssBox2">
-          <section class="msg box">
-            <h2 id="">Su mensaje es:</h2>
-            <input class="text-input-salida" type="text" id="msg" placeholder="Ningún mensaje fue encontrado">
-            <button class="copy-btn" onclick="copyToClipBoard()">Copiar</button>
-          </section>
-        </div>
-      </div>
-    </main>
-  
+    <main>
+      <form action="">
+        <input class="textInput" type="text" id="inputText" placeholder="Ingrese el texto aquí (Solo minúsculas, sin caracteres especiales (*^$%#))">
+      </form>
+      <input id="encrypt" type="button" value="Encriptar">
+      <input id="decrypt" type="button" value="Desencriptar">
+      <section class="messageBox">
+        <h2>Su mensaje es:</h2>
+        <input class="textOutput" type="text" id="textOutput" placeholder="Ningún mensaje fue encontrado">
+      </section>
+      <button class="copybutton" onclick="copy()">Copiar</button>
+    </main>  
     <script src="engine.js"></script>
     <script src="copy.js"></script>
-
     <footer>
-      <div class="logos">
         <a title="LinkedIn" href="https://www.linkedin.com/in/kiamel-coello-672727226/" target="_blank"><img class="linkedIn" src="logoLinkedin.png"></a>
         <a title="Instagram" href="https://www.instagram.com/kiamelcoello/" target="_blank"><img class="instagram" src="logoInstagram.png"></a>
         <a title="GitHub" href="https://github.com/SirLemaik" target="_blank"><img class="github" src="logoGithub.png"></a>
-      </div>
     </footer>
-  </body>
-    
-
+  </body>    
 </html>
 <!- 
                      _        _                 _      _                      _ _    

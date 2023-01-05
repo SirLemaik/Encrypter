@@ -1,29 +1,29 @@
-function encriptar (){
-    var texto = document.querySelector("#input-texto").value;
-    var textoCifrado = texto
+function encrypt (){
+    var text = document.querySelector("#inputText").value;
+    var cipherText = text
     .replace(/e/g, "enter")
     .replace(/i/g, "imes")
     .replace(/a/g, "ai")
     .replace(/o/g, "ober")
     .replace(/u/g, "ufat");
-    document.querySelector(".text-input-salida").value = textoCifrado;
-    document.querySelector("#input-texto").value;
+    document.querySelector(".textOutput").value = cipherText;
+    document.querySelector(".inputText").value;
     }
-var boton1 = document.querySelector("#btn-encriptar"); boton1.onclick = encriptar;
+var button1 = document.querySelector("#encrypt"); button1.onclick = encrypt;
 
-function desencriptar (){ 
-    var texto = document.querySelector("#input-texto").value; 
-    var textoCifrado = texto
+function decrypt (){ 
+    var text = document.querySelector("#inputText").value; 
+    var cipherText = text
     .replace(/enter/g, "e")
     .replace(/imes/g, "i")
     .replace(/ai/g, "a")
     .replace(/ober/g, "o")
     .replace(/ufat/g, "u"); 
-    document.querySelector(".text-input-salida").value = textoCifrado; 
-    document.querySelector("#input-texto").value;
+    document.querySelector(".textOutput").value = cipherText; 
+    document.querySelector(".inputText").value;
 
 }
-var boton2 = document.querySelector("#btn-desencriptar"); boton2.onclick = desencriptar;
+var button2 = document.querySelector("#decrypt"); button2.onclick = decrypt;
 
 /*
                      _        _                 _      _                      _ _    

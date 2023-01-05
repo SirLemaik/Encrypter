@@ -1,5 +1,5 @@
-function copyToClipBoard() {
-    var content = document.getElementById('msg');
+function copy() {
+    var content = document.getElementById('textOutput');
     content.select();
     document.execCommand('copy');
 }
