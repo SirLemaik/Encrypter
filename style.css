@@ -2,6 +2,7 @@
     position: flex;
     text-align: center;
     font-size: 2em;
+    padding: 0.5em 0 0 0;
 }
 
 .fullHolder{
@@ -14,13 +15,23 @@
     width: 50%;
     height: 30em;
     display: inline-block;
+    padding: 1em 0 0 0 ;
 
+}
+
+.part1tittle{
+    padding: 0 0 1em 0.7em;
+}
+
+.textOutput{
+    height: 30em;
 }
 
 .part2{
     width: 50%;
     height: 30em;
     display: inline-block;
+    padding: 1em 0 0 0;
 }
 
 .messageBox{
