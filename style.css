@@ -1,11 +1,47 @@
+.tittle{
+    position: flex;
+    text-align: center;
+    font-size: 2em;
+}
 
+.fullHolder{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-footer {
-    text-align: center;  
+.part1{
+    width: 50%;
+    height: 30em;
+    display: inline-block;
+
+}
+
+.part2{
+    width: 50%;
+    height: 30em;
+    display: inline-block;
+}
+
+.messageBox{
+    position: flex;
+    right: 0;
+    width: 50%;
+    top: 0;
+}
+
+footer{
+    text-align: center;
     width: 100%;
-    height: 8%;
+    height: 10%;
+    position: fixed;
     bottom: 0;
-    position:fixed;
+}
+
+.linkedIn, .instagram, .github{
+    width: 1.7em;
+    height: 1.7em;
+    padding: 1em 0.2em 1em 0.2em;
 }
 
 /*

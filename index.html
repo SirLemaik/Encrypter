@@ -10,23 +10,42 @@
   <body>
     <h1 class="tittle">Cryptify</h1>
     <main>
-      <form action="">
-        <input class="textInput" type="text" id="inputText" placeholder="Ingrese el texto aquí (Solo minúsculas, sin caracteres especiales (*^$%#))">
-      </form>
-      <input id="encrypt" type="button" value="Encriptar">
-      <input id="decrypt" type="button" value="Desencriptar">
-      <section class="messageBox">
-        <h2>Su mensaje es:</h2>
-        <input class="textOutput" type="text" id="textOutput" placeholder="Ningún mensaje fue encontrado">
-      </section>
-      <button class="copybutton" onclick="copy()">Copiar</button>
+      <div class="fullHolder">
+        <div class="part1">
+          <div class="part1tittle">
+            <h3>Su mensaje aquí:</h3>
+          </div>
+          <div class="textBox">
+            <form action="">
+              <input class="textInput" type="text" id="inputText" placeholder="Ingrese el texto aquí (Solo minúsculas, sin caracteres especiales (*^$%#))">
+            </form>
+          </div>
+          <div class="part1buttons">
+            <input class="buttons" id="encrypt" type="button" value="Encriptar">
+            <input class="buttons" id="decrypt" type="button" value="Desencriptar">
+          </div>    
+        </div>
+        <div class="part2">
+          <section class="messageBox">
+            <div class="part2tittle">
+              <h2>Su mensaje es:</h2>
+            </div>
+            <div class="textBox2">
+              <input class="textOutput" type="text" id="textOutput" placeholder="Ningún mensaje fue encontrado">
+            </div>
+            <div class="part2buttons">
+              <button class="buttons" onclick="copy()">Copiar</button>
+            </div>
+          </section>  
+        </div>
+      </div>   
     </main>  
     <script src="engine.js"></script>
     <script src="copy.js"></script>
     <footer>
-        <a title="LinkedIn" href="https://www.linkedin.com/in/kiamel-coello-672727226/" target="_blank"><img class="linkedIn" src="logoLinkedin.png"></a>
-        <a title="Instagram" href="https://www.instagram.com/kiamelcoello/" target="_blank"><img class="instagram" src="logoInstagram.png"></a>
-        <a title="GitHub" href="https://github.com/SirLemaik" target="_blank"><img class="github" src="logoGithub.png"></a>
+      <a title="LinkedIn" href="https://www.linkedin.com/in/kiamel-coello-672727226/" target="_blank"><img class="linkedIn" src="logoLinkedin.png"></a>
+      <a title="Instagram" href="https://www.instagram.com/kiamelcoello/" target="_blank"><img class="instagram" src="logoInstagram.png"></a>
+      <a title="GitHub" href="https://github.com/SirLemaik" target="_blank"><img class="github" src="logoGithub.png"></a>    
     </footer>
   </body>    
 </html>
