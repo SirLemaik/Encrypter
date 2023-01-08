@@ -20,11 +20,32 @@
 }
 
 .part1tittle{
-    padding: 0 0 1em 0.7em;
+    padding: 0 0 1em 1em;
 }
+
+.textBox{
+    padding: 0 0 0 1em;
+}
+
+.textInput{
+    height: 30em;
+}
+
+.part1buttons{
+    padding: 1em 0 0 1em;
+}
+
+.button1 + .button2 {
+    margin-left: 1.5em;
+}
+
 
 .textOutput{
     height: 30em;
+}
+
+.part1 + .part2 {
+    margin-left: 12em;
 }
 
 .part2{
@@ -34,12 +55,25 @@
     padding: 1em 0 0 0;
 }
 
+.part2tittle{
+    padding: 0 0 1em 0.7em;
+}
+
 .messageBox{
     position: flex;
     right: 0;
     width: 50%;
     top: 0;
 }
+
+.textBox2{
+    padding: 0 0 0 0.7em;
+}
+
+.part2buttons{
+    padding: 1em 0 0 0.7em;
+}
+
 
 footer{
     text-align: center;
