@@ -1,8 +1,21 @@
+#backgroundVideo{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
 .tittle{
     position: flex;
     text-align: center;
     font-size: 2em;
     padding: 0.5em 0 0 0;
+    color: white;
 }
 
 .fullHolder{
@@ -21,6 +34,7 @@
 
 .part1tittle{
     padding: 0 0 1em 1em;
+    color: white;
 }
 
 .textBox{
@@ -57,6 +71,7 @@
 
 .part2tittle{
     padding: 0 0 1em 0.7em;
+    color: white;
 }
 
 .messageBox{
@@ -83,10 +98,16 @@ footer{
     bottom: 0;
 }
 
-.linkedIn, .instagram, .github{
+.linkedIn,.github{
     width: 1.7em;
     height: 1.7em;
     padding: 1em 0.2em 1em 0.2em;
+}
+
+.instagram{
+    width: 2.5em;
+    height: 2.5em;
+    padding: 1em 0.2em 0.55em 0.2em;
 }
 
 /*
