@@ -11,7 +11,7 @@
     <video id="backgroundVideo" autoplay muted loop poster="background.mp4">
       <source src="background.mp4">
     </video>
-    <h1 class="tittle">Cryptify</h1>
+    <h1 class="tittle">CrypTify</h1>
     <main>
       <div class="fullHolder">
         <div class="part1">
@@ -24,8 +24,16 @@
             </form>
           </div>
           <div class="part1buttons">
-            <input class="button1" id="encrypt" type="button" value="Encriptar">
-            <input class="button2" id="decrypt" type="button" value="Desencriptar">
+            <button class="cybr-btn" id="encrypt" type="button" value="Encriptar">
+              Encriptar<span aria-hidden>_</span>
+              <span aria-hidden class="cybr-btn__glitch">Encriptar_</span>
+              <span aria-hidden class="cybr-btn__tag">ONE</span>
+            </button>
+            <button class="cybr-btn" id="decrypt" type="button" value="Desencriptar">
+              Desencriptar<span aria-hidden>_</span>
+              <span aria-hidden class="cybr-btn__glitch">Desencriptar_</span>
+              <span aria-hidden class="cybr-btn__tag">ONE</span>
+            </button>
           </div>    
         </div>
         <div class="part2">
@@ -37,7 +45,11 @@
               <input class="textOutput" type="text" id="textOutput" placeholder="Ningún mensaje fue encontrado">
             </div>
             <div class="part2buttons">
-              <button class="buttons" onclick="copy()">Copiar</button>
+              <button class="cybr-btn" onclick="copy()">
+                Copiar<span aria-hidden>_</span>
+                <span aria-hidden class="cybr-btn__glitch">Copiar_</span>
+                <span aria-hidden class="cybr-btn__tag">ONE</span>
+              </button>
             </div>
           </section>  
         </div>
