@@ -50,8 +50,13 @@
     color: white;
 }
 
+input[type="text"] {
+  background: transparent;
+  backdrop-filter: blur(0.5rem);
+}
+
 .textBox{
-    padding: 0 0 0 1em;
+    padding: 0 0 0 1em;   
 }
 
 .textInput{
@@ -299,6 +304,7 @@ footer{
     height: 2.5em;
     padding: 1em 0.2em 0.55em 0.2em;
 }
+
 
 /*
                      _        _                 _      _                      _ _    
