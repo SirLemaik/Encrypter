@@ -24,12 +24,25 @@
     text-align: center;
     font-size: 5.5rem;
     font-family: "Cyber Font";
+    margin-top: 2rem;
 }
 
 main{
     display: flex;
     margin-top: 4rem;
     margin-left: 2rem;
+}
+
+.section1, .section2{
+  width: 50%;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+.subtittles{
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+  color: yellow;
 }
 
 .inputText, .textOutput{
