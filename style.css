@@ -3,6 +3,11 @@
     src: url(cpfont.ttf);
 }
 
+@font-face {
+  font-family: "Bebas Font";
+  src: url(BebasNeue.ttf);
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
 
 
@@ -24,7 +29,8 @@
 
 .tittle{
 	 position: relative;
-   margin-left: 36%;
+   width: 100%;
+   text-align: center;
 }
 
 .tittle p {
@@ -35,6 +41,8 @@
 	 font-weight: 900;
 	 letter-spacing: -1px;
 	 padding: 2rem;
+   width: 100%;
+   text-align: center;
 }
 
 .tittle p:before, .tittle p:after {
@@ -46,6 +54,8 @@
 	 color: black;
 	 overflow: hidden;
 	 white-space: nowrap;
+   width: 100%;
+   text-align: center;
 }
 
 .tittle p:before {
@@ -199,16 +209,24 @@ main{
     margin-bottom: 3rem;
 }
 
-.section1, .section2{
+.section1 {
   width: 50%;
-  margin-left: 12%;
-  margin-top: 3%;
+  margin: 0 auto;
+}
+
+.section2{
+  margin: 0 auto;
 }
 
 .subtittles{
   font-size: 1.7rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  font-family: "Bebas Font";
+}
+
+h2, h3{
   color: yellow;
+  text-shadow: 5px 0 black, 0 5px black, 5px 0 black, 0 5px black;
 }
 
 .inputText, .textOutput{
@@ -223,12 +241,16 @@ main{
     color: darkgray
 }
 
+::placeholder{
+  font-size: 1rem;
+}
+
 textarea:focus{
     outline: none;
 }
 
 .buttons{
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .cybr-btn {
@@ -407,7 +429,6 @@ footer{
     width: 100%;
     bottom: 0;
     text-align: center;
-    margin-top: 7%;
 }
 
 .linkedIn, .instagram, .github{
