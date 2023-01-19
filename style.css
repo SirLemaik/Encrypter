@@ -24,7 +24,7 @@
 
 .tittle{
 	 position: relative;
-   margin-left: 26%;
+   margin-left: 36%;
 }
 
 .tittle p {
@@ -201,8 +201,8 @@ main{
 
 .section1, .section2{
   width: 50%;
-  margin-left: 2rem;
-  margin-top: 0;
+  margin-left: 12%;
+  margin-top: 3%;
 }
 
 .subtittles{
@@ -404,9 +404,10 @@ textarea:focus{
 
 footer{
     position: relative;
-    bottom: 0;
     width: 100%;
+    bottom: 0;
     text-align: center;
+    margin-top: 7%;
 }
 
 .linkedIn, .instagram, .github{
