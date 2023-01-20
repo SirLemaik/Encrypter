@@ -241,7 +241,7 @@ h2, h3{
 }
 
 ::placeholder{
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 textarea:focus{
@@ -249,11 +249,11 @@ textarea:focus{
 }
 
 textarea{
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 .buttons{
-  margin-top: 2rem;
+  margin-top: 5%;
 }
 
 .cybr-btn {
