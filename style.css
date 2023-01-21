@@ -211,10 +211,12 @@ main{
 .section1 {
   width: 50%;
   margin-left: 3%;
+  margin-bottom: 4%;
 }
 
 .section2{
   margin-left: 10%;
+  margin-bottom: 4%;
 }
 
 .subtittles{
@@ -234,6 +236,7 @@ h2, h3{
     border: 0.25rem solid gold;
     box-shadow: inset 0 0 1rem yellow, 0 0 1rem yellow;
     border-radius: 0.8rem;
+    margin-bottom: 1rem;
 }
 
 ::placeholder{
@@ -250,10 +253,6 @@ textarea:focus{
 
 textarea{
   font-size: 1.25rem;
-}
-
-.buttons{
-  margin-top: 5%;
 }
 
 .cybr-btn {
