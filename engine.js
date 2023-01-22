@@ -8,6 +8,7 @@ function encrypt (){
     .replace(/u/g, "ufat");
     document.querySelector(".textOutput").value = cipherText;
     document.querySelector(".inputText").value;
+    textOutput.style.background = "none";
     }
 var button1 = document.querySelector("#encrypt"); button1.onclick = encrypt;
 

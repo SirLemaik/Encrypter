@@ -1,442 +1,452 @@
 @font-face {
-    font-family: "Cyber Font";
-    src: url(cpfont.ttf);
-}
-
-@font-face {
-  font-family: "Bebas Font";
-  src: url(BebasNeue.ttf);
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
-
-
-*{
-    color: white;
+  font-family: "Cyber Font";
+  src: url(cpfont.ttf);
 }
 
 #videobg{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    object-fit: cover;
-    right: 0;
-    bottom: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+  right: 0;
+  bottom: 0;
+}
+
+*{
+  color: white;
 }
 
 .tittle{
-	 position: relative;
-   width: 90%;
-   text-align: center;
+  position: relative;
+  width: 90%;
+  text-align: center;
 }
 
 .tittle p {
-	 color: yellow;
-	 text-transform: uppercase;
-	 font-size: clamp(2rem, 3.0104166667rem, 5rem);
-	 font-family: "Cyber Font";
-	 font-weight: 900;
-	 letter-spacing: -1px;
-	 padding: 2rem;
-   width: 100%;
-   text-align: center;
+  color: yellow;
+  text-transform: uppercase;
+  font-size: clamp(2rem, 3.0104166667rem, 5rem);
+  font-family: "Cyber Font";
+  font-weight: 900;
+  letter-spacing: -1px;
+  padding: 2rem;
+  width: 100%;
+  text-align: center;
 }
 
 .tittle p:before, .tittle p:after {
-	 position: absolute;
-	 content: attr(data-text);
-	 padding: 2rem;
-	 top: 0;
-	 left: 0;
-	 color: black;
-	 overflow: hidden;
-	 white-space: nowrap;
-   width: 100%;
-   text-align: center;
+  position: absolute;
+  content: attr(data-text);
+  padding: 2rem;
+  top: 0;
+  left: 0;
+  color: black;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
 }
 
 .tittle p:before {
-	 left: 3px;
-	 text-shadow: -3px 2px #87cefa;
-	 animation: glitch-1 3s ease-in reverse infinite;
+  left: 3px;
+  text-shadow: -3px 2px #87cefa;
+  animation: glitch-1 3s ease-in reverse infinite;
 }
 
 .tittle p:after {
-	 left: -3px;
-	 text-shadow: -5px 2px #fff;
-	 animation: glitch-2 3s ease-in-out reverse infinite;
+  left: -3px;
+  text-shadow: -5px 2px #fff;
+  animation: glitch-2 3s ease-in-out reverse infinite;
 }
 
 @keyframes glitch-1 {
-	 0% {
-		 clip: rect(132px, auto, 101px, 30px);
-	}
-	 5% {
-		 clip: rect(17px, auto, 94px, 30px);
-	}
-	 10% {
-		 clip: rect(40px, auto, 66px, 30px);
-	}
-	 15% {
-		 clip: rect(87px, auto, 82px, 30px);
-	}
-	 20% {
-		 clip: rect(137px, auto, 61px, 30px);
-	}
-	 25% {
-		 clip: rect(34px, auto, 14px, 30px);
-	}
-	 30% {
-		 clip: rect(133px, auto, 74px, 30px);
-	}
-	 35% {
-		 clip: rect(76px, auto, 107px, 30px);
-	}
-	 40% {
-		 clip: rect(59px, auto, 130px, 30px);
-	}
-	 45% {
-		 clip: rect(29px, auto, 84px, 30px);
-	}
-	 50% {
-		 clip: rect(22px, auto, 67px, 30px);
-	}
-	 55% {
-		 clip: rect(67px, auto, 62px, 30px);
-	}
-	 60% {
-		 clip: rect(10px, auto, 105px, 30px);
-	}
-	 65% {
-		 clip: rect(78px, auto, 115px, 30px);
-	}
-	 70% {
-		 clip: rect(105px, auto, 13px, 30px);
-	}
-	 75% {
-		 clip: rect(15px, auto, 75px, 30px);
-	}
-	 80% {
-		 clip: rect(66px, auto, 39px, 30px);
-	}
-	 85% {
-		 clip: rect(133px, auto, 73px, 30px);
-	}
-	 90% {
-		 clip: rect(36px, auto, 128px, 30px);
-	}
-	 95% {
-		 clip: rect(68px, auto, 103px, 30px);
-	}
-	 100% {
-		 clip: rect(14px, auto, 100px, 30px);
-	}
+  0% {
+    clip: rect(132px, auto, 101px, 30px);
+ }
+  5% {
+    clip: rect(17px, auto, 94px, 30px);
+ }
+  10% {
+    clip: rect(40px, auto, 66px, 30px);
+ }
+  15% {
+    clip: rect(87px, auto, 82px, 30px);
+ }
+  20% {
+    clip: rect(137px, auto, 61px, 30px);
+ }
+  25% {
+    clip: rect(34px, auto, 14px, 30px);
+ }
+  30% {
+    clip: rect(133px, auto, 74px, 30px);
+ }
+  35% {
+    clip: rect(76px, auto, 107px, 30px);
+ }
+  40% {
+    clip: rect(59px, auto, 130px, 30px);
+ }
+  45% {
+    clip: rect(29px, auto, 84px, 30px);
+ }
+  50% {
+    clip: rect(22px, auto, 67px, 30px);
+ }
+  55% {
+    clip: rect(67px, auto, 62px, 30px);
+ }
+  60% {
+    clip: rect(10px, auto, 105px, 30px);
+ }
+  65% {
+    clip: rect(78px, auto, 115px, 30px);
+ }
+  70% {
+    clip: rect(105px, auto, 13px, 30px);
+ }
+  75% {
+    clip: rect(15px, auto, 75px, 30px);
+ }
+  80% {
+    clip: rect(66px, auto, 39px, 30px);
+ }
+  85% {
+    clip: rect(133px, auto, 73px, 30px);
+ }
+  90% {
+    clip: rect(36px, auto, 128px, 30px);
+ }
+  95% {
+    clip: rect(68px, auto, 103px, 30px);
+ }
+  100% {
+    clip: rect(14px, auto, 100px, 30px);
+ }
 }
 
 @keyframes glitch-2 {
-	 0% {
-		 clip: rect(129px, auto, 36px, 30px);
-	}
-	 5% {
-		 clip: rect(36px, auto, 4px, 30px);
-	}
-	 10% {
-		 clip: rect(85px, auto, 66px, 30px);
-	}
-	 15% {
-		 clip: rect(91px, auto, 91px, 30px);
-	}
-	 20% {
-		 clip: rect(148px, auto, 138px, 30px);
-	}
-	 25% {
-		 clip: rect(38px, auto, 122px, 30px);
-	}
-	 30% {
-		 clip: rect(69px, auto, 54px, 30px);
-	}
-	 35% {
-		 clip: rect(98px, auto, 71px, 30px);
-	}
-	 40% {
-		 clip: rect(146px, auto, 34px, 30px);
-	}
-	 45% {
-		 clip: rect(134px, auto, 43px, 30px);
-	}
-	 50% {
-		 clip: rect(102px, auto, 80px, 30px);
-	}
-	 55% {
-		 clip: rect(119px, auto, 44px, 30px);
-	}
-	 60% {
-		 clip: rect(106px, auto, 99px, 30px);
-	}
-	 65% {
-		 clip: rect(141px, auto, 74px, 30px);
-	}
-	 70% {
-		 clip: rect(20px, auto, 78px, 30px);
-	}
-	 75% {
-		 clip: rect(133px, auto, 79px, 30px);
-	}
-	 80% {
-		 clip: rect(78px, auto, 52px, 30px);
-	}
-	 85% {
-		 clip: rect(35px, auto, 39px, 30px);
-	}
-	 90% {
-		 clip: rect(67px, auto, 70px, 30px);
-	}
-	 95% {
-		 clip: rect(71px, auto, 103px, 30px);
-	}
-	 100% {
-		 clip: rect(83px, auto, 40px, 30px);
-	}
+  0% {
+    clip: rect(129px, auto, 36px, 30px);
+ }
+  5% {
+    clip: rect(36px, auto, 4px, 30px);
+ }
+  10% {
+    clip: rect(85px, auto, 66px, 30px);
+ }
+  15% {
+    clip: rect(91px, auto, 91px, 30px);
+ }
+  20% {
+    clip: rect(148px, auto, 138px, 30px);
+ }
+  25% {
+    clip: rect(38px, auto, 122px, 30px);
+ }
+  30% {
+    clip: rect(69px, auto, 54px, 30px);
+ }
+  35% {
+    clip: rect(98px, auto, 71px, 30px);
+ }
+  40% {
+    clip: rect(146px, auto, 34px, 30px);
+ }
+  45% {
+    clip: rect(134px, auto, 43px, 30px);
+ }
+  50% {
+    clip: rect(102px, auto, 80px, 30px);
+ }
+  55% {
+    clip: rect(119px, auto, 44px, 30px);
+ }
+  60% {
+    clip: rect(106px, auto, 99px, 30px);
+ }
+  65% {
+    clip: rect(141px, auto, 74px, 30px);
+ }
+  70% {
+    clip: rect(20px, auto, 78px, 30px);
+ }
+  75% {
+    clip: rect(133px, auto, 79px, 30px);
+ }
+  80% {
+    clip: rect(78px, auto, 52px, 30px);
+ }
+  85% {
+    clip: rect(35px, auto, 39px, 30px);
+ }
+  90% {
+    clip: rect(67px, auto, 70px, 30px);
+ }
+  95% {
+    clip: rect(71px, auto, 103px, 30px);
+ }
+  100% {
+    clip: rect(83px, auto, 40px, 30px);
+ }
 }
-
 main{
-    display: flex;
-    margin-top: 0;
-    margin-bottom: 3rem;
+  display: flex;
 }
 
-.section1 {
+.inputText, .textOutput{
+  resize: none;
+  border-radius: 1rem;
+}
+
+.inputText{
+  background: transparent;
+  backdrop-filter: blur(1rem);
+  border: 0.25rem solid gold;
+  box-shadow: inset 0 0 1rem yellow, 0 0 1rem yellow;
+  border-radius: 0.8rem;
+}
+
+.textOutput{
+  background-image: url(notFound.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 0.25rem solid gold;
+  box-shadow: inset 0 0 1rem yellow, 0 0 1rem yellow;
+  border-radius: 0.8rem;
+  backdrop-filter: blur(1rem);
+}
+
+::placeholder{
+  color: darkgray;
+  font-size: 1.2rem;
+}
+
+textarea:focus{
+  outline: none;
+}
+
+textarea{
+  font-size: 1.2rem;
+}
+
+.section1{
   width: 50%;
-  margin-left: 3%;
-  margin-bottom: 4%;
+  margin-left: 5%;
+}
+
+h1{
+  position: fixed;
+  margin-top: -17rem;
+  margin-left: 10rem;
+  font-size: 1.1rem;
+  color: white;
+  font-family: fantasy;  
+  text-shadow: 1px 0 black, 0 1px black, 1px 0 black, 0 1px black;
 }
 
 .section2{
   margin-left: 10%;
-  margin-bottom: 4%;
+  margin-right: 5%;
 }
 
-.subtittles{
-  font-size: 1.7rem;
-  margin-bottom: 2rem;
-  font-family: "Bebas Font";
+.cybr-btn1{
+  margin-top: 1rem;
 }
 
-h2, h3{
-  color: yellow;
-  text-shadow: 5px 0 black, 0 5px black, 5px 0 black, 0 5px black;
+.cybr-btn2{
+  margin-top: 1rem;
 }
 
-.inputText, .textOutput{
-    background: transparent;
-    backdrop-filter: blur(1rem);
-    border: 0.25rem solid gold;
-    box-shadow: inset 0 0 1rem yellow, 0 0 1rem yellow;
-    border-radius: 0.8rem;
-    margin-bottom: 1rem;
-}
-
-::placeholder{
-    color: darkgray
-}
-
-::placeholder{
-  font-size: 1.25rem;
-}
-
-textarea:focus{
-    outline: none;
-}
-
-textarea{
-  font-size: 1.25rem;
+.cybr-btn3{
+  margin-top: 1rem;
 }
 
 .cybr-btn {
-    --primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 1%));
-    --shadow-primary: hsl(var(--shadow-primary-hue), 90%, 50%);
-    --primary-hue: 0;
-    --primary-lightness: 50;
-    --color: hsl(0, 0%, 100%);
-    --font-size: 1.2em;
-    --shadow-primary-hue: 180;
-    --label-size: 5px;
-    --shadow-secondary-hue: 60;
-    --shadow-secondary: hsl(var(--shadow-secondary-hue), 90%, 60%);
-    --clip: polygon(0 0, 100% 0, 100% 100%, 95% 100%, 95% 90%, 85% 90%, 85% 100%, 8% 100%, 0 70%);
-    --border: 4px;
-    --shimmy-distance: 5;
-    --clip-one: polygon(0 2%, 100% 2%, 100% 95%, 95% 95%, 95% 90%, 85% 90%, 85% 95%, 8% 95%, 0 70%);
-    --clip-two: polygon(0 78%, 100% 78%, 100% 100%, 95% 100%, 95% 90%, 85% 90%, 85% 100%, 8% 100%, 0 78%);
-    --clip-three: polygon(0 44%, 100% 44%, 100% 54%, 95% 54%, 95% 54%, 85% 54%, 85% 54%, 8% 54%, 0 54%);
-    --clip-four: polygon(0 0, 100% 0, 100% 0, 95% 0, 95% 0, 85% 0, 85% 0, 8% 0, 0 0);
-    --clip-five: polygon(0 0, 100% 0, 100% 0, 95% 0, 95% 0, 85% 0, 85% 0, 8% 0, 0 0);
-    --clip-six: polygon(0 40%, 100% 40%, 100% 85%, 95% 85%, 95% 85%, 85% 85%, 85% 85%, 8% 85%, 0 70%);
-    --clip-seven: polygon(0 63%, 100% 63%, 100% 80%, 95% 80%, 95% 80%, 85% 80%, 85% 80%, 8% 80%, 0 70%);
-    font-family: 'Cyber', sans-serif;
-    color: var(--color);
-    cursor: pointer;
-    background: transparent;
-    text-transform: uppercase;
-    font-size: var(--font-size);
-    outline: transparent;
-    position: relative;
-    font-weight: bold;
-    border: 0;
-    min-width: 4em;
-    height: 2em;
-    line-height: 2em;
-    transition: background 0.2s;
+  --primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 1%));
+  --shadow-primary: hsl(var(--shadow-primary-hue), 90%, 50%);
+  --primary-hue: 0;
+  --primary-lightness: 50;
+  --color: hsl(0, 0%, 100%);
+  --font-size: 1.2em;
+  --shadow-primary-hue: 180;
+  --label-size: 5px;
+  --shadow-secondary-hue: 60;
+  --shadow-secondary: hsl(var(--shadow-secondary-hue), 90%, 60%);
+  --clip: polygon(0 0, 100% 0, 100% 100%, 95% 100%, 95% 90%, 85% 90%, 85% 100%, 8% 100%, 0 70%);
+  --border: 4px;
+  --shimmy-distance: 5;
+  --clip-one: polygon(0 2%, 100% 2%, 100% 95%, 95% 95%, 95% 90%, 85% 90%, 85% 95%, 8% 95%, 0 70%);
+  --clip-two: polygon(0 78%, 100% 78%, 100% 100%, 95% 100%, 95% 90%, 85% 90%, 85% 100%, 8% 100%, 0 78%);
+  --clip-three: polygon(0 44%, 100% 44%, 100% 54%, 95% 54%, 95% 54%, 85% 54%, 85% 54%, 8% 54%, 0 54%);
+  --clip-four: polygon(0 0, 100% 0, 100% 0, 95% 0, 95% 0, 85% 0, 85% 0, 8% 0, 0 0);
+  --clip-five: polygon(0 0, 100% 0, 100% 0, 95% 0, 95% 0, 85% 0, 85% 0, 8% 0, 0 0);
+  --clip-six: polygon(0 40%, 100% 40%, 100% 85%, 95% 85%, 95% 85%, 85% 85%, 85% 85%, 8% 85%, 0 70%);
+  --clip-seven: polygon(0 63%, 100% 63%, 100% 80%, 95% 80%, 95% 80%, 85% 80%, 85% 80%, 8% 80%, 0 70%);
+  font-family: 'Cyber', sans-serif;
+  color: var(--color);
+  cursor: pointer;
+  background: transparent;
+  text-transform: uppercase;
+  font-size: var(--font-size);
+  outline: transparent;
+  position: relative;
+  font-weight: bold;
+  border: 0;
+  min-width: 4em;
+  height: 2em;
+  line-height: 2em;
+  transition: background 0.2s;
 }
-  
+
 .cybr-btn:hover {
-    --primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 0.8%));
+  --primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 0.8%));
 }
 
 .cybr-btn:active {
-    --primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 0.6%));
+  --primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 0.6%));
 }
-  
+
 .cybr-btn:after,.cybr-btn:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    clip-path: var(--clip);
-    z-index: -1;
-}
-  
-.cybr-btn:before {
-  background: var(--shadow-primary);
-  transform: translate(var(--border), 0);
-}
-  
-.cybr-btn:after {
-  background: var(--primary);
-}
-  
-.cybr-btn__tag {
-  position: absolute;
-  padding: 1px 4px;
-  letter-spacing: 1px;
-  line-height: 1;
-  bottom: -5%;
-  right: 5%;
-  font-weight: normal;
-  color: white(0, 0%, 0%);
-  font-size: var(--label-size);
-}
-
-.cybr-btn__glitch {
-  position: absolute;
-  top: calc(var(--border) * -1);
-  left: calc(var(--border) * -1);
-  right: calc(var(--border) * -1);
-  bottom: calc(var(--border) * -1);
-  background: var(--shadow-primary);
-  text-shadow: 2px 2px var(--shadow-primary), -2px -2px var(--shadow-secondary);
-  clip-path: var(--clip);
-  animation: glitch 2s infinite;
-  display: none;
-}
-
-.cybr-btn:hover .cybr-btn__glitch {
-  display: block;
-}
-
-.cybr-btn__glitch:before {
   content: '';
   position: absolute;
-  top: calc(var(--border) * 1);
-  right: calc(var(--border) * 1);
-  bottom: calc(var(--border) * 1);
-  left: calc(var(--border) * 1);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   clip-path: var(--clip);
-  background: var(--primary);
   z-index: -1;
 }
 
+.cybr-btn:before {
+background: var(--shadow-primary);
+transform: translate(var(--border), 0);
+}
+
+.cybr-btn:after {
+background: var(--primary);
+}
+
+.cybr-btn__tag {
+position: absolute;
+padding: 1px 4px;
+letter-spacing: 1px;
+line-height: 1;
+bottom: -5%;
+right: 5%;
+font-weight: normal;
+color: white(0, 0%, 0%);
+font-size: var(--label-size);
+}
+
+.cybr-btn__glitch {
+position: absolute;
+top: calc(var(--border) * -1);
+left: calc(var(--border) * -1);
+right: calc(var(--border) * -1);
+bottom: calc(var(--border) * -1);
+background: var(--shadow-primary);
+text-shadow: 2px 2px var(--shadow-primary), -2px -2px var(--shadow-secondary);
+clip-path: var(--clip);
+animation: glitch 2s infinite;
+display: none;
+}
+
+.cybr-btn:hover .cybr-btn__glitch {
+display: block;
+}
+
+.cybr-btn__glitch:before {
+content: '';
+position: absolute;
+top: calc(var(--border) * 1);
+right: calc(var(--border) * 1);
+bottom: calc(var(--border) * 1);
+left: calc(var(--border) * 1);
+clip-path: var(--clip);
+background: var(--primary);
+z-index: -1;
+}
+
 @keyframes glitch {
-  0% {
-    clip-path: var(--clip-one);
-  }
-  2%, 8% {
-    clip-path: var(--clip-two);
-    transform: translate(calc(var(--shimmy-distance) * -1%), 0);
-  }
-  6% {
-    clip-path: var(--clip-two);
-    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
-  }
-  9% {
-    clip-path: var(--clip-two);
-    transform: translate(0, 0);
-  }
-  10% {
-    clip-path: var(--clip-three);
-    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
-  }
-  13% {
-    clip-path: var(--clip-three);
-    transform: translate(0, 0);
-  }
-  14%, 21% {
-    clip-path: var(--clip-four);
-    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
-  }
-  25% {
-    clip-path: var(--clip-five);
-    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
-  }
-  30% {
-    clip-path: var(--clip-five);
-    transform: translate(calc(var(--shimmy-distance) * -1%), 0);
-  }
-  35%, 45% {
-    clip-path: var(--clip-six);
-    transform: translate(calc(var(--shimmy-distance) * -1%));
-  }
-  40% {
-    clip-path: var(--clip-six);
-    transform: translate(calc(var(--shimmy-distance) * 1%));
-  }
-  50% {
-    clip-path: var(--clip-six);
-    transform: translate(0, 0);
-  }
-  55% {
-    clip-path: var(--clip-seven);
-    transform: translate(calc(var(--shimmy-distance) * 1%), 0);
-  }
-  60% {
-    clip-path: var(--clip-seven);
-    transform: translate(0, 0);
-  }
-  31%, 61%, 100% {
-    clip-path: var(--clip-four);
-  }
+0% {
+  clip-path: var(--clip-one);
+}
+2%, 8% {
+  clip-path: var(--clip-two);
+  transform: translate(calc(var(--shimmy-distance) * -1%), 0);
+}
+6% {
+  clip-path: var(--clip-two);
+  transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+}
+9% {
+  clip-path: var(--clip-two);
+  transform: translate(0, 0);
+}
+10% {
+  clip-path: var(--clip-three);
+  transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+}
+13% {
+  clip-path: var(--clip-three);
+  transform: translate(0, 0);
+}
+14%, 21% {
+  clip-path: var(--clip-four);
+  transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+}
+25% {
+  clip-path: var(--clip-five);
+  transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+}
+30% {
+  clip-path: var(--clip-five);
+  transform: translate(calc(var(--shimmy-distance) * -1%), 0);
+}
+35%, 45% {
+  clip-path: var(--clip-six);
+  transform: translate(calc(var(--shimmy-distance) * -1%));
+}
+40% {
+  clip-path: var(--clip-six);
+  transform: translate(calc(var(--shimmy-distance) * 1%));
+}
+50% {
+  clip-path: var(--clip-six);
+  transform: translate(0, 0);
+}
+55% {
+  clip-path: var(--clip-seven);
+  transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+}
+60% {
+  clip-path: var(--clip-seven);
+  transform: translate(0, 0);
+}
+31%, 61%, 100% {
+  clip-path: var(--clip-four);
+}
 }
 
 .cybr-btn:nth-of-type(2) {
-  --primary-hue: 260;
+--primary-hue: 260;
 } 
 
-footer{
-    position: relative;
-    width: 100%;
-    bottom: 0;
-    text-align: center;
+.icons{
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
 }
 
-.linkedIn, .instagram, .github{
-    width: 2rem;
-    height: 2rem;
-    transition: transform .15s;
+.linkedIn, .instagram, .gitHub {
+  width: 2rem;
+  height: 2rem;
 }
 
 .instagram{
@@ -444,7 +454,7 @@ footer{
   margin-right: 1%;
 }
 
-.github:hover{
+.gitHub:hover{
   transform: scale(1.2);
   box-shadow: 0 0 1rem .3rem yellow;
   border-radius: 100%;
@@ -461,6 +471,51 @@ footer{
   box-shadow: 0 0 1rem .3rem yellow;
   border-radius: 15%;
 }
+
+
+
+@media (max-width: 750px) {
+  .tittle {
+      margin-top: 0;
+      font-size: 2rem;
+      width:auto;
+  }
+
+  .tittle p {
+    color: yellow;
+    font-size: 2rem;
+    width:auto;
+  }
+
+  .tittle p:before, .tittle p:after {
+    width: auto;
+    margin-left: 10%;
+  }
+
+  .section1{
+    margin-top: 1rem;
+    width: 100%;
+    margin-left: auto;
+    margin-left: 0.8rem;
+  }
+
+  .section2{
+    position: absolute;
+    margin-left: auto;
+    margin-left: 0.8rem;
+    margin-top: 37rem;
+  }
+
+  h1{
+    position: absolute;
+  }
+
+  .icons{
+    position: relative;
+    margin-top: 43rem;
+  }
+}
+
 /*
                      _        _                 _      _                      _ _    
                     | |      | |               (_)    | |                    (_| |   

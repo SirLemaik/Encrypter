@@ -9,15 +9,16 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div><video type="video" id="videobg" autoplay muted loop poster="background.mp4"><source src="background.mp4"></video></div>
-    <div class="tittle">
-      <p data-text="Criptify">Cryptify</p>
-    </div>
+    <header>
+      <div class="tittle">
+        <p data-text="Criptify">Criptify</p>
+      </div>
+    </header>
     <main>
-      <div class="section1">
-        <section>
-          <h2 class="subtittles">Escriba su mensaje aquí:</h2>
-          <textarea class="inputText" name="" id="inputText" cols="36" rows="17" placeholder="Ingrese su texto aquí (solo minúsculas, sin caracteres especiales)"></textarea>
+      <div><video type="video" id="videobg" autoplay muted loop poster="background.mp4"><source src="background.mp4"></video></div>
+        <section class="section1">
+          <textarea class="inputText" name="" id="inputText" cols="35" rows="20" placeholder="Ingrese su texto aquí: 
+(solo minúsculas, sin caracteres especiales ni acentos)"></textarea>
           <div class="buttons">
             <button class="cybr-btn" id="encrypt" type="button" value="Encriptar">Encriptar<span aria-hidden>_</span>
               <span aria-hidden class="cybr-btn__glitch">Encriptar_</span>
@@ -27,25 +28,32 @@
               <span aria-hidden class="cybr-btn__tag">ONE</span></button>
           </div>
         </section>
-      </div>
-      <div class="section2">
-        <section>
-          <h3 class="subtittles">Su mensaje es:</h3>
-          <textarea class="textOutput" name="" id="textOutput" cols="36" rows="17" placeholder="Ningún mensaje fue encontrado"></textarea>
+        <section class="section2">
+          <textarea class="textOutput" name="" id="textOutput" cols="35" rows="20"></textarea>
+          <div id="message"><h1>Ningún mensaje fue encontrado</h1></div>
           <div class="buttons">
             <button class="cybr-btn" onclick="copy()">Copiar<span aria-hidden>_</span>
               <span aria-hidden class="cybr-btn__glitch">Copiar_</span>
               <span aria-hidden class="cybr-btn__tag">ONE</span></button>
           </div>
         </section>
-      </div>
     </main>  
     <script src="engine.js"></script>
     <script src="copy.js"></script>
+    <script>
+      var buttonpress = document.getElementById("encrypt");
+      var textmessage = document.getElementById("message");
+
+      buttonpress.addEventListener("click", function(){
+        textmessage.style.display = "none";
+      })
+    </script>
     <footer>
-      <a href="https://www.linkedin.com/in/kiamel-coello-672727226/" target="_blank"><img class="linkedIn" src="logoLinkedin.png" alt="logo linkedin"></a>
-      <a href="https://www.instagram.com/kiamelcoello/" target="_blank"><img class="instagram" src="logoInstagram.png" alt="logo instagram"></a>
-      <a href="https://github.com/SirLemaik" target="_blank"><img class="github" src="logoGithub.png" alt="logo github"></a>    
+      <ul class="icons">
+        <a href="https://www.linkedin.com/in/kiamel-coello-672727226/" target="_blank"><img class="linkedIn" src="logoLinkedin.png" alt="logo linkedin"></a>
+        <a href="https://www.instagram.com/kiamelcoello/" target="_blank"><img class="instagram" src="logoInstagram.png" alt="logo instagram"></a>
+        <a href="https://github.com/SirLemaik" target="_blank"><img class="gitHub" src="logoGithub.png" alt="logo github"></a>    
+      </ul>
     </footer>
   </body>    
 </html>
