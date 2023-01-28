@@ -240,7 +240,7 @@ textarea{
 }
 
 h1{
-  position: fixed;
+  position: absolute;
   margin-top: -17rem;
   margin-left: 10rem;
   font-size: 1.1rem;
@@ -252,18 +252,6 @@ h1{
 .section2{
   margin-left: 10%;
   margin-right: 5%;
-}
-
-.cybr-btn1{
-  margin-top: 1rem;
-}
-
-.cybr-btn2{
-  margin-top: 1rem;
-}
-
-.cybr-btn3{
-  margin-top: 1rem;
 }
 
 .cybr-btn {
@@ -301,6 +289,7 @@ h1{
   height: 2em;
   line-height: 2em;
   transition: background 0.2s;
+  margin-top: 2rem;
 }
 
 .cybr-btn:hover {

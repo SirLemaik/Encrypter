@@ -1,5 +1,13 @@
 function encrypt (){
     var text = document.querySelector("#inputText").value;
+    if (text !== text.toLowerCase()) {
+        alert("ERROR SUPER HIPER DUPER MEGA FATAL: Solo letras minúsculas");
+        return;
+    }
+    if (text.match(/[^a-z ]/i)) {
+        alert("ERROR SUPER HIPER DUPER MEGA FATAL: No incluyas caracteres especiales ni acentos.");
+        return;
+    }
     var cipherText = text
     .replace(/e/g, "enter")
     .replace(/i/g, "imes")
